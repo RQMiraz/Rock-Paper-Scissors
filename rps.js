@@ -5,8 +5,8 @@ function computerPlay(){
 }
 
 function playRound(playerSelection,computerSelection){
-    let Pl=playerSelection.toLowerCase()
-    let cp=computerSelection.toLowerCase()
+    const Pl=playerSelection.toLowerCase()
+    const cp=computerSelection.toLowerCase()
 
     if(pl==="rock" && cp ==="paper"){
         return "You Lose! Paper beats Rock!"
