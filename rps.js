@@ -5,7 +5,7 @@ function computerPlay(){
 }
 
 function playRound(playerSelection,computerSelection){
-    const Pl=playerSelection.toLowerCase()
+    const pl=playerSelection.toLowerCase()
     const cp=computerSelection.toLowerCase()
 
     if(pl==="rock" && cp ==="paper"){
@@ -26,7 +26,10 @@ function playRound(playerSelection,computerSelection){
     else if(pl==="scissors" && cp==="rock"){
         return "You lose! Rock beats Scissors"
     }
+    else if(pl===cp){
+        return "Tie!"
+    }
     else{
-        return "You need to input either rock, paper or scissor."
+        return "Need to input either rock, paper or scissors."
     }
 }
