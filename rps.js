@@ -33,3 +33,17 @@ function playRound(playerSelection,computerSelection){
         return "Need to input either rock, paper or scissors."
     }
 }
+
+
+function game(){
+      for(let i =0; i < 5;i++){
+          gameplay();
+      }  
+}
+
+
+function gameplay(){
+    let player = prompt("Enter rock, paper or scissors");
+    let computer = computerPlay();
+    return console.log(playRound(player,computer));
+}
